@@ -109,7 +109,7 @@ body {
 
 .nav { 
   background: #555555;
-  height: 70px; 
+  height: 100px; 
   width: 100%;
 }
 
@@ -128,13 +128,13 @@ body {
 
 .nav ul li{
   color: #fff;
-  font-size:20px;
+  font-size:25px;
   font-weight: 500;
   display: inline-block; 
-  height: 70px;
-  line-height: 70px; 
+  height: 100px;
+  line-height: 100px; 
   list-style: none;
-  padding: 0px 90px;
+  padding: 0px 80px;
   transition: background .5s; 
 }
 
@@ -144,6 +144,10 @@ body {
   transition: background .5s;  
 }
 
+.main{
+	padding-bottom: 100px;
+}
+
 .main .container {
 	max-width: 1500px;
 	margin:80px 100px;
@@ -151,13 +155,16 @@ body {
 
 .main .container h1{
 	font-weight: 1000;
-	//display:inline
+}
+
+.main .container h2{
+	font-size: 40px;
+	font-weight: 500;
 }
 
 .main .container p{
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: 500;
-	//display:inline
 }
 
 .main .container a{
@@ -171,9 +178,12 @@ body {
 }
 
 .footer { 
+  display: block;
   background: #000000;
   height: 80px; 
   padding-bottom: 50px;
+  position: relative;
+  margin-top: -80px;
 }
 
 .footer .container{
