@@ -145,7 +145,7 @@ body {
 }
 
 .main .container {
-	max-width: 650px;
+	max-width: 1500px;
 	margin:80px 100px;
 }
 
@@ -191,7 +191,10 @@ body {
 }
 
 @media (max-width: 1000px) {
-
+	.main .container {
+		max-width: 650px;
+		margin:80px 100px;
+	}
 }
 
 @media (max-width: 500px) {
@@ -207,4 +210,5 @@ body {
   .main img {
     width: 100%;
   }
+
 }
