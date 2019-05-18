@@ -1,73 +1,210 @@
-<!DOCTYPE html>
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
-<html>
-  <head>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
-	<link href="style.css" type="text/css" rel="stylesheet">
-	<script src="jscript.js"></script>
-  </head>
-  
-  <body>
-    <div class="header">
-      <div class="container">
-      </div>
-    </div>
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+}
 
-    <div class="nav">
-      <div class="container">
-        <ul>
-          <li><a href="index.html">員工簡介</a></li><li><a href="index_photo.html">員工旅遊行程</a></li><li><a href="index_talk.html">公司陣容</a></li>
-        </ul>
-      </div>
-    </div>
-	
-    <div class="main">
-      <div class="container">	
-        <img id="bighead" src="images/head.png" height="250"width="250">
-		<h2><公司職員簡介></h2>
-        <p><strong>姓名 :</strong> 王宇航</p>
-        <p><strong>職稱 :</strong> 活動股長、副大隊長、大隊長、2017阿里營總召、2018原文假日營營長</p>
-		<p><strong>入社年份 :</strong> 2015-2017 
-        <p><strong>特殊表現 :</strong> 原文社打開包裝創始者、傘蜥蜴復育工作者、枕頭外翻成龜頭、性教育推廣者</p>
-      </div>
-	  <div class="container">
-		<br>
-		<h2><員工表現></h2>
-		<br>
-		<p>畢業快樂!謝謝航航當初找我當執密，從你身上學到很多做事的方法，在我當營長的時候也給我很多啟發跟建議。
-		也謝謝你辛苦的擔起大隊長的重責。祝你未來一切順利！--琪鑒 aka林口鄧紫棋</p>
-		<br>
-		<p>王宇航大五要繼續找我們吃晚餐喔。墜愛你了把拔<3（幹，樓上這是誰，把拔是我在叫的ㄟ）把拔延畢快樂，很感謝
-		這一年您願意分享您在創世紀一半的居所供我生存，我是真的很珍惜還能跟你們一起玩耍的日子，好愛好愛你們，真心覺得
-		你們是我這輩子交到最好的朋友了，好希望時間就停在這一年（但是沒有這些考試）。好啦，感性的話不多說，反正我平常
-		也說得夠多且您並非要離開，但我們先相約畢業之後每年至少要約個5次跟大家見面聊天打屁聊議題！-愛你的兒子ㄐㄩ</p>
-		<br>
-		<p>畢業快樂!謝謝你是我的密室股股長，那時候才跟你比較熟，覺得你很有才很會領導整個團隊，在帶假日營的時候更
-		從你身上學到很多做事的方法，能和你一起共事很開心~ 希望之後一切事事順心~ BY 鈁淩<p>
-		<br>
-		<p>開始變熟是在阿里營的時候，還有期末社大一起在台達館地下室練 heart shaker，那時候覺得可以有這樣的一群人一
-		起快樂到忘記時間，笑到肚子痛真好，才真正的感受到所謂「同溫層」，在房地產也很罩，期末報告加油！賺大錢喔。by
-		依潔</p>
-		<br>
-		<p>謝謝你找我當課程股長，覺得你是個能屈能伸的人，很有條理也很會演戲XD祝你一路順遂BY妤</p>
-		<br>
-		<p>畢業快樂~謝謝你在假日營的時候選擇了完全沒影帶營隊經驗的我還有之前原創週的密室股還有大隊長><，你是一個很酷
-		的人，默默地從你身上學到了很多事還有講話的方法。祝你以後在電子所能夠順順利利~ By洋洋</p>
-		<br>
-		<p>整個原文19大概最先想感謝的人就是你了，因為你在材料系的社團介紹時間穿的很像要跳現代舞，然後滔滔不絕口條很好
-		的介紹原文我就莫名其妙被吸引了。雖然加入之後沒有和你有變太熟的機會，幸好還有社大的一支舞彌補了這個遺憾。謝謝
-		你讓我擁有兩年很棒的大學生活<3</p>
-	  </div>
-    </div>
-	
-    <div class="footer">
-      <div class="container">
-        <p style="font-size:25px;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact us&nbsp;&nbsp;</strong></p>
-      </div>
-	  <div class="container">
-		<a href="https://www.facebook.com/groups/227482207720310/"><img id="contactUs" src="images/contact.png" height="50"width="50" style=""></a>
-      </div>
-    </div>
-  </body>
-</html>
+#contactUs{
+	float: right;
+	border-radius:150px;
+	position:relative; 
+	top:35px;
+}
+
+#bighead{
+	float: left;
+	border-style:double; 
+	border-width:8px; 
+	border-radius:15px;
+	margin: 50px 80px 0 0;	
+	position:relative; 
+	top:-60px;	
+}
+
+#bigheadtree{
+	border-style:double; 
+	border-width:8px; 
+	border-radius:15px;
+	//margin: 50px 80px 50px 0;	
+	//position:relative; 
+	//top:-50px;	
+}
+
+#bigheadtree:hover{
+	background: #555555;
+	cursor: pointer; 
+}
+
+#date{ 
+	width: 100%;
+	margin: 0px;
+	padding:0px;
+}
+
+#photo{
+	float: left;
+	border-style:groove; 
+	border-width:8px; 
+	display:block;
+	margin: auto ;
+	margin:50px 50px;
+	padding:5px;	
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px; 
+  padding: 0 10px;
+}
+
+.header {
+  background: url(images/header.png) no-repeat center center; 
+  background-size: cover;
+  height: 600px;
+  text-align: center; 
+}
+
+.header .container {
+  position: relative;
+  top: 200px;
+}
+
+.header h1 {
+  color: #fff;
+  line-height: 100px; 
+  font-size: 120px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase; 
+}
+
+/*
+@media (min-width:850px) {
+  .header h1 {
+    font-size: 120px;
+  }
+}
+*/
+
+.header p {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-transform: uppercase; 
+}
+
+.btn {
+  color: #fff;
+  background: #000;
+  padding: 10px 40px;
+  text-decoration: none; 
+  transition: background .5s; 
+}
+
+.nav { 
+  background: #555555;
+  height: 70px; 
+  width: 100%;
+}
+
+.nav ul {
+  height: 100px;
+  list-style: none;
+  margin: 0 auto; 
+  padding: 0;
+  text-align:center;
+}
+
+.container a{
+	color: #fff;
+	text-decoration:none;	
+}
+
+.nav ul li{
+  color: #fff;
+  font-size:20px;
+  font-weight: 500;
+  display: inline-block; 
+  height: 70px;
+  line-height: 70px; 
+  list-style: none;
+  padding: 0px 90px;
+  transition: background .5s; 
+}
+
+.btn:hover, .nav ul li:hover {
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s;  
+}
+
+.main .container {
+	max-width: 650px;
+	margin:80px 100px;
+}
+
+.main .container h1{
+	font-weight: 1000;
+	//display:inline
+}
+
+.main .container p{
+	font-size: 20px;
+	font-weight: 500;
+	//display:inline
+}
+
+.main .container a{
+	color: #000;
+	text-decoration:none;	
+}
+
+.main img {
+  float: left;
+  margin: 50px 80px 50px 0;
+}
+
+.footer { 
+  background: #000000;
+  height: 80px; 
+  padding-bottom: 50px;
+}
+
+.footer .container{
+  margin: 0;
+  padding: 0 10px;	
+  float:left;
+}
+
+.footer p { 
+  color: #fff;
+  font-size: 20px;  
+  height: 80px; 
+  line-height: 120px;
+  margin: 0px;  
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}
