@@ -116,9 +116,15 @@ body {
   transition: background .5s; 
 }
 
-.fix{
-	position:fixed;
-	top:0px;	
+.navFixed {
+  z-index: 10;          
+  position: fixed;      
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  min-width: 100%;
+  opacity: 0.94;
+  transition: opacity .5s ease-out;   
 }
 
 .nav { 
@@ -143,8 +149,8 @@ body {
 
 .nav ul li{
   color: #fff;
-  font-size:25px;
-  font-weight: 500;
+  font-size:30px;
+  font-weight: 1000;
   display: inline-block; 
   height: 100px;
   line-height: 100px; 
