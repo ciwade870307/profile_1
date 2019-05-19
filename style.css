@@ -10,8 +10,8 @@ body {
 
 #all{width:auto; height:auto;  margin-left: auto; margin-right: auto;}
 #products{width:auto; height:auto}
-#menu{top:-100px; left:10px; position:relative}
-#menu img{max-height: 2%;max-width: 2%;cursor:pointer;margin:5px;}
+#menu{top:-100px; left:100px; position:relative}
+#menu img{max-height: 10%;max-width: 10%;cursor:pointer;margin:5px;}
 
 #day1{}
 #day2{}
