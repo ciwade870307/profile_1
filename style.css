@@ -11,7 +11,7 @@ body {
 #all{width:auto; height:auto;  margin-left: auto; margin-right: auto;}
 #products{width:auto; height:auto}
 #menu{top:-100px; left:100px; position:relative}
-#menu img{max-height: 10%;max-width: 10%;cursor:pointer;margin:5px;}
+#menu img{max-height: 5%;max-width:5%;cursor:pointer;margin:5px;}
 
 #day1{}
 #day2{}
@@ -135,12 +135,12 @@ body {
 .nav { 
   background: #555555; 
   z-index: 10;
-  height: 100px; 
+  height: 200px; 
   width: 100%;
 }
 
 .nav ul {
-  height: 100px;
+  height: 200px;
   list-style: none;
   margin: 0 auto; 
   padding: 0;
@@ -157,8 +157,8 @@ body {
   font-size:30px;
   font-weight: 1000;
   display: inline-block; 
-  height: 100px;
-  line-height: 100px; 
+  height: 200px;
+  line-height: 200px; 
   list-style: none;
   padding: 0px 80px;
   transition: background .5s; 
