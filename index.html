@@ -25,16 +25,16 @@
                     n=e.data.id
                     change()
                     clearInterval(clock)
-                    clock=setInterval(auto,4000)
+                    clock=setInterval(auto,3500)
                 })
             }
             n=0
-            clock=setInterval(auto,4000)
+            clock=setInterval(auto,3500)
             $("#products img").mouseover(function(){
                 clearInterval(clock)
             })
             $("#products img").mouseout(function(){
-                clock=setInterval(auto,4000)
+                clock=setInterval(auto,3500)
             })
             function auto(){
                 n++
