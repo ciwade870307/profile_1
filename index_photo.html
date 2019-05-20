@@ -16,13 +16,50 @@
 			});
 		});
 	</script>
+	<script>
+        $(document).ready(function(){
+            for(i=0;i<3;i++){
+                $("#menu img:eq("+i+")").click({id:i},function(e){
+                    n=e.data.id
+                    change()
+                    clearInterval(clock)
+                    clock=setInterval(auto,3500)
+                })
+            }
+            n=0
+            clock=setInterval(auto,3500)
+            $("#products img").mouseover(function(){
+                clearInterval(clock)
+            })
+            $("#products img").mouseout(function(){
+                clock=setInterval(auto,3500)
+            })
+            function auto(){
+                n++
+                if(n>2){
+                    n=0
+                }
+                change()
+            }
+            function change(){
+                $("#products img").fadeOut(400,function(){
+                    $("#products img").attr("src","images/header_"+n+".png")
+                    $("#products img").fadeIn()
+                })
+                $("#products").css("background-image","url(images/images/header_"+n+".png)")
+                $("#menu img").attr("src","images/point_white.png")
+                $("#menu img:eq("+n+")").attr("src","images/point_gray.png")
+            }
+        })
+    </script>
   </head>
   <body>
-    <div class="header">
-      <div class="container">
-      </div>
-    </div>
-
+  
+	<div id=all>
+		<div id=products><img src="images/header_0.png" width=100% ></div>
+		
+	</div>
+    
     <div class="nav">
       <div class="container">
         <ul>
@@ -31,6 +68,8 @@
       </div>
     </div>
 
+	<div><div id=menu style="width:50%"><img src="images/point_gray.png"><img src="images/point_white.png"><img src="images/point_white.png"></div>
+	
 	<div class="main">
 		<div class="container" style="margin:0; padding:0; max-width:100%;">
 			<h1 style="text-align:center;font-size:60px"><strong>[特選北海道～學生優惠搶購]森之精靈&middot;星夜成功湖畔賞鯨&middot;十八尖山雙纜車&middot;
